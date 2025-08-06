@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    grid-template-areas: 
+    "header"
+    "hero"
+    "proyectos"
+    "contacto"
+    "footer";
+    background-color: #1a1c1c;
+    margin: 0;
+
+}
+.nav {
+    grid-area: header;
+    display: flex;
+    background-color: #181c1c;
+    color: #aaa;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__ul {
+    display: flex;
+}
+.nav__ul > li {
+    margin: 10px;
+    list-style: none;
+}
