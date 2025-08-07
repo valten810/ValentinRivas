@@ -2,7 +2,7 @@
     margin: 0;
 }
 body {
-    font-family: sans-serif;
+    font-family: montserrat;
     font-size: 16px;
     grid-template-areas: 
     "header"
@@ -10,23 +10,105 @@ body {
     "proyectos"
     "contacto"
     "footer";
-    background-color: #1a1c1c;
+
     margin: 0;
 
 }
 .nav {
     grid-area: header;
     display: flex;
-    background-color: #181c1c;
+    background-color: #1a1a1a;
     color: #aaa;
     font-size: 0.8rem;
     align-items: center;
     justify-content: space-around;
+    height: 3rem;
+    padding: 1rem;
 }
 .nav__ul {
     display: flex;
 }
+.nav h1 {
+    font-size: 1rem;
+}
+.nav p {
+    font-size: 0.7rem;
+}
 .nav__ul > li {
     margin: 10px;
     list-style: none;
+
+}
+.nav__ul a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: #1a1c1c;
+}
+.hero h2 {
+    font-size: 4rem;
+    color: #ffff86;
+    font-weight: 500;
+}
+.hero h3 {
+    font-size: 5rem;
+    color: #eee;
+    font-weight: 500;
+}
+.hero p {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+/* PROYECTOS */
+.proyectos {
+    background-color: #111113;
+    padding: 100px;
+}
+.categoria {
+    color: #7f94ff;
+}
+.proyectos h2 {
+    text-align: left;
+    font-size: 3rem;
+    color: #eee;
+    font-weight: 500;
+
+}
+.card__container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+.card__gym, .card__todolist  {
+    width: 300px;
+    height: 300px;
+    background-color: #fefefe;
+    padding: 20px;
+    color: #222;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.card__gym img {
+    height: 150px;
+    object-fit: cover;
 }
