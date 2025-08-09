@@ -97,6 +97,7 @@ body {
 }
 .categoria {
     color: #7f94ff;
+    margin-bottom: 7px;
 }
 .title {
     text-align: left;
@@ -157,6 +158,8 @@ body {
 }
 .sobre-mi__p {
     color: #aaa;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 /* CONTACTO*/
