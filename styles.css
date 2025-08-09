@@ -40,6 +40,7 @@ body {
 }
 .nav__ul {
     display: flex;
+    padding-right: 10px;
 }
 .nav h1 {
     font-size: 1rem;
