@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     overflow-x: hidden;
@@ -77,6 +78,9 @@ body {
     margin-top: 50px;
     word-break: break-word;
     padding: 0 30px;
+    animation: FadeIn 0.8s ease both;
+    animation-delay: 200ms;
+
 }
 .hero h3 {
     font-size: 5rem;
@@ -84,10 +88,14 @@ body {
     font-weight: 500;
     padding: 0 30px;
     word-break: break-word;
+    animation: FadeIn 0.8s ease both;
+    animation-delay: 400ms;
 }
 .hero p {
     color: #bbb;
     font-size: 1rem;
+    animation: FadeIn 0.8s ease both;
+    animation-delay: 600ms;
 }
 
 /* PROYECTOS */
@@ -306,5 +314,15 @@ body {
     }
     .form {
         padding: 30px;
+    }
+}
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    to {
+        opacity: 1;
+
     }
 }
