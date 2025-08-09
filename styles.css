@@ -272,7 +272,7 @@ body {
 
 @media (max-width: 720px) {
     html {
-        font-size: 13px;
+        font-size: 14px;
     }
     .hero h2 {
         font-size: 3rem;
