@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -34,25 +36,93 @@
         <!--Proyectos-->
         <section class="proyectos" id="proyectos">
             <p class="categoria">PROYECTOS</p>
-            <h2>Mis proyectos destacados</h2>
+            <h2 class="title">Mis proyectos destacados</h2>
             <div class="card__container">
                 <article class="card__gym">
-                    <p class="categoria-proyecto">FRONTEND</p>
-                    <h3>To-do List</h3>
-                    <p>Una aplicación web para organizar tus tareas diarias de manera eficiente.</p>
-                    <img class="card__img" src="todolist.PNG" alt="">
+                    <div>
+                        <p class="categoria-proyecto">FRONTEND</p>
+                        <h3>To-do List</h3>
+                        <p>App web para gestionar tareas. Permite crear, eliminar y guardar tareas usando Local Storage</p>
+                        <ul class="tecnologias">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-js"></i></li>
+                        </ul>
+                    </div>
+                    <a href="https://valentodolist.netlify.app/" aria-label="Link hacia la web explicada"><img class="card__img" src="todolist.PNG" alt=""></a>
+                    
                 </article>
 
                 <article class="card__todolist">
                     <div>
                         <p class="categoria-proyecto">FRONTEND</p>
                         <h3>Sitio Gym</h3>
-                        <p>Sitio web estático para un gimnasio, enfocado en diseño moderno y responsive.</p>
+                        <p>Landing page profesional para un coach de fitness. Incluye presentación de servicios, secciones limpias y diseño moderno</p>
                     </div>
-                    <img class="card__img" src="image.png" alt="">
+                        <ul class="tecnologias">
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-js"></i></li>
+                        </ul>
+                    <a href="https://agustinramirez.netlify.app/" aria-label="Link hacia la web explicada"><img class="card__img" src="image.png" alt=""></a>
                 </article>
             </div>
         </section>
+        <section class="sobre-mi" id="sobre-mi">
+            <p class="categoria">SOBRE MÍ</p>
+            <h2 class="title">Valentín Rivas</h2>
+            <p class="sobre-mi__p">
+                Soy un desarrollador web enfocado en construir proyectos reales y funcionales. Trabajo principalmente con <strong>HTML, CSS, JavaScript y React</strong>, y estoy desarrollando aplicaciones como una app de tareas y sitios web para clientes reales.
+            </p >
+            <p class="sobre-mi__p" >
+                Me interesa crear soluciones limpias, intuitivas y rápidas. Estoy constantemente aprendiendo y mejorando, con el objetivo de convertirme en un profesional completo en el desarrollo web full stack.
+            </p class="sobre-mi__p">
+            <p class="sobre-mi__p">
+                Actualmente estoy construyendo mi portafolio mientras aplico mis conocimientos en proyectos concretos, buscando oportunidades freelance y preparando el camino para crear mi propia agencia o startup tecnológica.
+            </p>
+        </section>
+
+        
+        <section class="contacto" id="contacto">
+            <p class="categoria">CONTACTO</p>
+            <h2 class="title">Hablemos</h2>            
+            <form action="https://formspree.io/f/xkgzpdka" method="post"  class="form" data-aos="fade-up" data-aos-delay="200"  data-aos-offset="200">
+                <div>
+                    <label for="nombre" class="contacto__label">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required />
+                </div>
+                <div>
+                    <label for="contacto" class="contacto__label">Email o Número</label>
+                    <input type="text" name="contacto" id="contacto" required>
+                </div>
+                <div>
+                    <label for="mensaje" class="contacto__label textarea">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class=" button">Enviar</button>
+            </form>
+            <div class="contactos__direct">
+                <p class="contactos__item" data-aos="fade-right"  ><strong>WhatsApp:</strong> <a href="https://wa.me/+3515551748" target="_blank">+54 93514567890</a></p>
+            </div>
+
+
+            
+        </section>
+        
     </main>
+        <footer class="footer">
+        <h3 class="foot-h3">Valentín Rivas | Desarrollador web</h3>
+        <p class="foot-text">Transformando ideas en experiencias digitales</p>
+        <p class="foot-copy">© TODOS LOS DERECHOS RESERVADOS. </p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
