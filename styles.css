@@ -272,7 +272,7 @@ body {
 
 @media (max-width: 720px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
     .hero p {
         padding: 10px;
