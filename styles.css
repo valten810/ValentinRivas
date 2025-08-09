@@ -279,7 +279,6 @@ body {
     }
     .hero h3 {
         font-size: 4rem;
-        padd
     }
     .hero p {
         padding: 10px 30px;
@@ -301,5 +300,8 @@ body {
     }
     .contacto {
         padding: 50px 30px;
+    }
+    .form {
+        padding: 30px;
     }
 }
