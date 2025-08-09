@@ -75,13 +75,13 @@ body {
     font-weight: 500;
     margin-top: 50px;
     word-break: break-word;
-    padding: 20px;
+    padding: 0 20px;
 }
 .hero h3 {
     font-size: 5rem;
     color: #eee;
     font-weight: 500;
-    padding: 20px;
+    padding: 0 20px;
     word-break: break-word;
 }
 .hero p {
@@ -277,7 +277,7 @@ body {
         padding: 10px;
     }
     .proyectos {
-        padding: 60px 10px 60px 60px;
+        padding: 60px 30px 60px 60px;
     }
     .card__gym, .card__todolist {
         max-width: 400px;
