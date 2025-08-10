@@ -164,7 +164,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 500px;
+    width: 100%;
+    max-width: 550px;
+    
     height: 500px;
 
 
@@ -333,6 +335,12 @@ body {
 .foot-copy {
     color: #7d7d7d;
     font-size: 13px;
+}
+@media (max-width: 900px) {
+    .card__container {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 @media (max-width: 720px) {
