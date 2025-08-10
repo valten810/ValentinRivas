@@ -356,8 +356,9 @@ body {
         width: auto;
     }
     .card__container {
-        flex-direction: column;
-        flex-wrap: wrap
+        flex-direction: column !important;
+        height: auto;
+
     }
 
     .sobre-mi {
