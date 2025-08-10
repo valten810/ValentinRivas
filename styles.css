@@ -368,6 +368,9 @@ body {
         height: auto;
 
     }
+    .card-animation {
+        height: auto;
+    }
 
     .sobre-mi {
         padding: 50px 60px 50px 30px;
