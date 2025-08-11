@@ -82,7 +82,7 @@ body {
 }
 .hero h2 {
     font-size: 4rem;
-    color: #d2d253;
+    color: #ffff86;
     font-weight: 500;
     margin-top: 50px;
     word-break: break-word;
@@ -140,6 +140,11 @@ body {
 .proyectos {
 
     padding: 100px;
+}
+.proyectos a {
+    width: 100%;
+    text-decoration: none;
+    max-width: 550px;
 }
 .categoria {
     color: #7f94ff;
