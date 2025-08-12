@@ -388,6 +388,11 @@ body {
         padding: 30px;
     }
 }
+@media (hover:none) {
+    .card__gym:hover, .card__todolist:hover {
+        transform: none;
+    }
+}
 @keyframes FadeIn {
     from {
         opacity: 0;
