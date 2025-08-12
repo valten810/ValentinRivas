@@ -190,10 +190,7 @@ body {
     border: 1px solid #6b7280;
     transition: all 0.3s ease;
 }
-.card__gym:hover, .card__todolist:hover {
-    transform: scale(1.05) !important;
 
-}
 .categoria-proyecto {
     color: #7f94ff;
 }
@@ -388,9 +385,9 @@ body {
         padding: 30px;
     }
 }
-@media (hover:none) {
+@media (hover: hover) {
     .card__gym:hover, .card__todolist:hover {
-        transform: none;
+        transform: scale(1.05) !important;
     }
 }
 @keyframes FadeIn {
