@@ -385,7 +385,7 @@ body {
         padding: 30px;
     }
 }
-@media (hover:hover) {
+@media (hover: hover) {
     .card__gym:hover, .card__todolist:hover {
         transform: scale(1.05) !important;
     }
