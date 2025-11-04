@@ -1,20 +1,16 @@
-
 * {
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
     text-align: justify;
 }
 html, body {
-    html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-
-
-}
 }
 body {
     font-family: montserrat;
@@ -27,7 +23,7 @@ body {
     "footer";
     background-color: #111113;
     margin: 0;
-
+    overflow-x: hidden;
 }
 .nav {
     grid-area: header;
@@ -57,7 +53,6 @@ body {
 .nav__ul > li {
     margin: 5px;
     list-style: none;
-
 }
 .nav__ul a {
     color: #aaa;
@@ -69,7 +64,6 @@ body {
 }
 
 /* HERO */
-
 .hero {
     display: flex;
     text-align: center;
@@ -89,7 +83,6 @@ body {
     padding: 0 30px;
     animation: FadeIn 0.8s ease both;
     animation-delay: 200ms;
-
 }
 .hero h3 {
     font-size: 5rem;
@@ -116,8 +109,6 @@ body {
     display: flex;
     justify-content: center;
     text-decoration: none;
-
-
 }
 .hero i:hover {
     transform: scale(1.3);
@@ -139,14 +130,10 @@ body {
 
 /* PROYECTOS */
 .proyectos {
-
     padding: 100px;
 }
 .proyectos a {
-
     text-decoration: none;
-
-    overflow: hidden;
     transition: all 0.3s ease;
 }
 .categoria {
@@ -161,27 +148,18 @@ body {
 }
 .card__container {
     margin-top: 70px;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    gap: 100px;
-    height: 500px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
 }
 .card-animation {
     display: flex;
-
     justify-content: center;
     width: 100%;
-    max-width: 442px;
-    
-
-
-
 }
-.card__gym, .card__todolist  {
-    width: 400px;
-    min-height: 400px;
+.card__gym, .card__todolist {
+    width: 100%;
     background-color: #1f2937;
     padding: 20px;
     color: #eee;
@@ -191,15 +169,15 @@ body {
     justify-content: space-between;
     border: 1px solid #6b7280;
     transition: all 0.3s ease;
+    min-height: 400px;
 }
-
 .categoria-proyecto {
     color: #7f94ff;
 }
 .proyectos h3 {
     margin: 10px 0;
 }
-.card__container p{
+.card__container p {
     font-size: 1.3rem;
 }
 .tecnologias {
@@ -214,16 +192,13 @@ body {
     border-radius: 10px;
     height: 178px;
     object-fit: cover;
-    position: relative;
-
     margin-top: 6px;
-
 }
 
 /* SOBRE MI*/
 .sobre-mi {
     padding: 50px 100px 50px 100px;
-    scroll-margin-top: 300px ;
+    scroll-margin-top: 300px;
 }
 .sobre-mi__p {
     color: #aaa;
@@ -234,7 +209,7 @@ body {
 /* CONTACTO*/
 .contacto {
     padding: 50px 100px;
-    scroll-margin-top: 100px ;
+    scroll-margin-top: 100px;
 }
 .form {
     margin: auto;
@@ -250,35 +225,25 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
-
-
-
 .contacto__label {
     display: block;
     color: #7f94ff;
     margin-bottom: 5px;
 }
-
-
 .contacto input, .contacto textarea {
     padding: 8px 0;
     font-size: 18px;
     border-radius: 10px;
-    width: 96%;;
+    width: 96%;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     border: 2px solid #333;
     color: #eee;
     margin-bottom: 10px;
 }
-
-
 .contacto textarea {
-    font-family: sans-serif ;
+    font-family: sans-serif;
     resize: vertical;
 }
-
-/* Estilo del botón con efecto amarillo y negro */
 .button {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: #7f94ff;
@@ -286,31 +251,18 @@ body {
     border-radius: 12px;
     font-size: 1.1rem;
     font-weight: 700;
-
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     position: relative;
-
     padding: 1rem 2rem;
     width: 97%;
     box-shadow: 0 4px 15px #7f94ff77;
     margin-top: 10px;
 }
-
-
-
-
-
-
-
-
 .contactos__direct {
     color: #666;
-
-
 }
-
 .contactos__item {
     text-align: center;
     color: #666;
@@ -327,12 +279,10 @@ body {
     text-align: center;
     border-top: 2px solid #7f94ff;
 }
-
 .foot-h3 {
     color: #7f94ff;
     padding: 20px 20px 15px 20px;
 }
-
 .foot-text {
     margin-bottom: 60px;
     color: #ccc;
@@ -341,10 +291,22 @@ body {
     color: #7d7d7d;
     font-size: 13px;
 }
-@media (max-width: 900px) {
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
     .card__container {
-        flex-direction: column;
-        height: auto;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .proyectos {
+        padding: 80px 50px;
+    }
+    .card__container {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
     }
 }
 
@@ -362,23 +324,22 @@ body {
         padding: 10px 30px;
     }
     .proyectos {
-        padding: 60px 30px 60px 30px;
-    }
-    .card__gym, .card__todolist {
-        max-width: 400px;
-        width: auto;
+        padding: 60px 30px;
     }
     .card__container {
-        flex-direction: column !important;
-        height: auto;
-
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 40px;
+    }
+    .card__gym, .card__todolist {
+        width: 100%;
+        min-height: auto;
     }
     .card-animation {
-        height: auto;
+        width: 100%;
     }
-
     .sobre-mi {
-        padding: 50px 60px 50px 30px;
+        padding: 50px 30px;
     }
     .contacto {
         padding: 50px 30px;
@@ -387,11 +348,25 @@ body {
         padding: 30px;
     }
 }
-@media (hover: hover) {
-    .proyectos a:hover {
-        transform: scale(1.05) !important;
+
+@media (max-width: 480px) {
+    .proyectos {
+        padding: 50px 20px;
+    }
+    .card__gym, .card__todolist {
+        padding: 16px;
+    }
+    .card__container p {
+        font-size: 1.1rem;
     }
 }
+
+@media (hover: hover) {
+    .proyectos a:hover {
+        transform: scale(1.05);
+    }
+}
+
 @keyframes FadeIn {
     from {
         opacity: 0;
@@ -399,6 +374,5 @@ body {
     }
     to {
         opacity: 1;
-
     }
 }
