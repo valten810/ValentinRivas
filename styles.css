@@ -34,7 +34,7 @@ body {
     font-size: 0.8rem;
     align-items: center;
     justify-content: space-around;
-    height: 3rem;
+    min-height: 3rem;
     padding: 1rem;
     position: fixed;
     width: 100%;
